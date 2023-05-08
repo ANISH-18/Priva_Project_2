@@ -19,6 +19,9 @@
   scroll-behavior: smooth;
 }
 
+
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -731,6 +734,38 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Brands
+--------------------------------------------------------------*/
+.Brands .Brands-wrap {
+  /* border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec; */
+}
+
+.Brands .client-logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec; */
+  overflow: hidden;
+  background: #fff;
+  height: 100px;
+}
+
+.Brands .client-logo img {
+  transition: all 0.3s ease-in-out;
+  height: 36px;
+  filter: grayscale(100%);
+}
+
+.Brands .client-logo:hover img {
+  filter: none;
+  transform: scale(2);
+}
+
+
+/*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
@@ -766,6 +801,41 @@ section {
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
+
+
+/* Brands Return */
+.center-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Hot Sales  */
+.img-container{
+  position: relative;
+}
+
+.image-container img{
+width: 100%;
+height: auto;
+}
+
+.text-overlay{
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 5%;
+  left: 5%;
+  /* left: 50%;  */
+  /* transform: translate(-50%,-50%); */
+  /* text-align: center; */
+  color: #000;
+  margin: 0;
+  z-index: 0;
+  line-height: normal;
+}
+
+
 
 /*--------------------------------------------------------------
 # Stats Counter Section
